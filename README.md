@@ -53,7 +53,7 @@ ReactDOM.render(
 );
 ```
 
-Map the actions to your components' props using `mapDispatchToProps`, and use your actions a you always did!
+Map the actions to your components' props using `mapDispatchToProps`, and use your actions as you always did!
 
 ```javascript
 import { mapDispatchToProps } from 'redux-saga-wrapper';
@@ -63,7 +63,7 @@ class App extends React.Component {
   // ...
 
   componentDidMount() {
-    this.props.actions.doRequest('https://reqres.in/api/users/2');
+    this.props.actions.fireRequest('https://reqres.in/api/users/2');
   }
 
   // ...
@@ -72,7 +72,7 @@ class App extends React.Component {
 export default connect(() => ({}), mapDispatchToProps)(App);
 ```
 
-You can also retreive the actions creators to call them from a saga or map them manually:
+You can also retreive the actions creators in order to call them from a saga or map them manually:
 
 ```javascript
 import { actionCreators } from 'redux-saga-wrapper';

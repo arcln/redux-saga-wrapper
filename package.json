@@ -1,6 +1,6 @@
 {
   "name": "redux-saga-wrapper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A wrapper to write redux reducers and sagas in a minimalist way.",
   "main": "lib/index.js",
   "repository": "arthurchaloin/redux-saga-wrapper",
