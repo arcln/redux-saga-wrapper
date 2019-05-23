@@ -2,6 +2,14 @@
 
 A wrapper to write redux reducers and sagas in a minimalist way.
 
+## Installation
+
+```bash
+npm i redux-saga-wrapper --save
+# or
+yarn add redux-saga-wrapper
+```
+
 ## How to use
 
 Declare your actions. The `...Failed` variant is called if your code throws an error, otherwise the `...Success` one is called with the return value of the saga.
