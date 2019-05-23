@@ -5,5 +5,9 @@
   "main": "lib/index.js",
   "repository": "arthurchaloin/redux-saga-wrapper",
   "author": "Arthur Chaloin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
+  }
 }
