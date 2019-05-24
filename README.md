@@ -17,12 +17,12 @@ Declare your actions. The `...Failed` variant is called if your code throws an e
 ```javascript
 const actions = {
   fireRequest: {
-    *saga({ payload: [ url ] }) {
+    *saga(url) {
       return yield fetch(url);
     },
   },
   fireRequestSuccess: {
-    reducer(state, [ response, action ]) {
+    reducer(state, response, action) {
       return {
         response,
         ...state,
@@ -30,7 +30,7 @@ const actions = {
     },
   },
   fireRequestFailed: {
-    *saga({ payload: [ error ] }) {
+    *saga(error, action) {
       alert(`something went wrong: ${error.toString()}`);
     },
   },
